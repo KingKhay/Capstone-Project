@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    color:black;
+    font-size: 16px;
+}
+
+/* Header Section */
+
+header{
+    height:64px;
+    width: 100%;
+    background-color: white;
+}
+
+#header-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    
+}
+
+a{
+    color:black;
+}
+
+.links{
+    margin:0px 1rem;
+}
+
+
+
+/* Banner Section */
+
+.banner-section{
+    background-color:lightgray;
+    height:auto;
+    min-width: 100%;
+}
+
+.banner-image{
+    width:100%;
+    height: auto;
+}
+
+h1{
+    margin-top: 2rem;
+    padding-left: 1rem;
+}
+h3{
+    margin-top: 2rem;
+    padding-left: 1rem;
+}
+
+#banner-link{
+    background-color:gray;
+    font-size: 2rem;
+    color:white;
+    margin: 1.5rem 0 2rem 1rem;
+    display:inline-block;
+    padding:0 23%;
+}
+
+
+/* Main Section */
+
+/* Upper Section */
+#main-upper-section{
+    min-width: 100%;
+    margin: 0 1rem 0 1rem;
+}
+
+.main-images{
+    max-width: 90%;
+    height: auto;
+}
+
+#orientation-image{
+    margin-top:1rem;
+}
+#campus-image{
+    margin-top: 4rem;
+}
+
+#guest-image{
+    margin-top: 4rem;
+}
+
+.read-more{
+    color:lightblue;
+    text-decoration: none;
+    margin: 10px 0px;
+    display:inline-block;
+}
+
+#last-read-more{
+    margin-bottom: 2rem;
+}
+.labels{
+    margin-left:1rem;
+}
+.label{
+    color:grey;
+}
+
+/* Middle Section */
+#main-middle-section{
+    min-width: 100%;
+}
+
+#middle-heading{
+    margin:2rem 0px 1rem 0px;
+    text-align: center;
+}
+
+#middle-links{
+    min-width:100%;
+    margin-bottom: 2rem;
+    
+}
+
+.mid-link-text{
+    text-decoration: none;
+    display: block;
+    border: 1px solid lightgrey;
+    background-color:lightgrey;
+    padding: 1rem 0 1.5rem 1rem;
+    margin-bottom: 0.5rem;
+    margin-left:1rem;
+    max-width:90%;
+    font-weight: bold;
+}
+
+/* Main lower section */
+
+#lower-heading{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Footer Section */
+footer{
+    width: 100%;
+    height: 3rem;
+}
+
+#footer-p{
+    margin: 1.5rem 0 1rem 1rem;
+    color: gray;
+    font-size:0.75rem;
+}
