@@ -17,6 +17,10 @@ header{
     background-color: white;
 }
 
+#desktop-header{
+    display: none;
+}
+
 #header-icons{
     display: flex;
     justify-content: center;
@@ -40,7 +44,7 @@ a{
 .banner-section{
     background-color:lightgray;
     height:auto;
-    min-width: 100%;
+    width: 100%;
 }
 
 .banner-image{
@@ -71,13 +75,21 @@ h3{
 
 /* Upper Section */
 #main-upper-section{
-    min-width: 100%;
+    width: 100%;
     margin: 0 1rem 0 1rem;
+}
+
+#main-desktop-left{
+    display: none;
 }
 
 .main-images{
     max-width: 90%;
     height: auto;
+}
+
+.main-images-desktop{
+    display: none;
 }
 
 #orientation-image{
@@ -92,7 +104,7 @@ h3{
 }
 
 .read-more{
-    color:lightblue;
+    color:lightskyblue;
     text-decoration: none;
     margin: 10px 0px;
     display:inline-block;
@@ -138,9 +150,17 @@ h3{
 
 /* Main lower section */
 
+#start-learning-section-desktop{
+    display: none;
+}
+
 #lower-heading{
     text-align: center;
     margin-bottom: 1rem;
+}
+
+#thesis-desktop{
+    display: none;
 }
 
 /* Footer Section */
@@ -153,4 +173,302 @@ footer{
     margin: 1.5rem 0 1rem 1rem;
     color: gray;
     font-size:0.75rem;
+}
+
+#footer-desktop{
+    display: none;
+}
+
+/* Media Queries for Desktop */
+@media screen and (min-width:1300px){
+
+
+    /* Header Section for Desktop */
+    #header-icons{
+        display:none;
+    }
+
+    #desktop-header{
+        height:64px;
+        display: block;
+        text-align:center;
+    }
+
+    #header-left{
+        font-size: 2rem;
+        display: block;
+        line-height: 64px;
+        float:left;
+        margin-left: 1.5rem;
+    }
+    #header-right{
+        display: block;
+        float:right;
+        margin-right:1.5rem;
+    }
+
+    .header-right-links{
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 1rem;
+        font-size:1.5rem;
+        line-height: 64px;
+    }
+
+    /* Banner Section */
+    .banner-section{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 2rem 1.5rem;
+    }
+
+    #banner-p{
+        margin-right: 1.5rem;
+    }
+
+    #banner-link{
+        padding: 0.5rem 23%;
+    }
+
+    h1{
+        font-size:3.5rem;
+    }
+
+    /* Main Section for Desktop */
+    #main-first-section{
+        display: flex;
+        max-width: 100%;
+        height:auto;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    /* Left hand side */
+    #main-desktop-left{
+        width:60%;
+        height: auto;
+        display: inline-block;
+        margin: 0 1.5rem 0 1rem;
+    }
+
+    #main-left-image{
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    #left-heading{
+        margin-bottom: 1.5rem;
+    }
+
+    #first-section-p{
+        margin-bottom: 2rem;
+    }
+
+
+    /* Right hand side */
+    #main-desktop-right{
+        width:40%;
+        height: auto;
+        /* float: right; */
+        border-left: 0.5px solid lightgray;
+        display: inline-block;
+    }
+
+    .sections{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .main-images-desktop{
+        display: block;
+        width: 35%;
+        height: 100%;
+    }
+
+    .main-images{
+        display: none;
+    }
+
+    .labels{
+        width: 65%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #last-section{
+        background-color: lightgray;
+    }
+
+    #last-image{
+        margin: 1rem 0 1rem 1rem;
+    }
+
+
+    /* Start Learning Section */
+    #start-learing-section-mobile{
+        display: none;
+    }
+
+    #start-learning-section-desktop{
+        display: block;
+        background-color: lightgray;
+        min-width: 100%;
+        height: 850px;
+    }
+    hr{
+        display:none;
+    }
+
+    
+    #main-middle-section{
+        margin: 2rem 0px 2rem 0;
+    }
+
+    #middle-heading{
+       display: block;
+       padding: 2rem 0;
+       font-size: large;
+       font-weight: bold;
+    }
+
+    #image-links{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        height: auto;
+        margin:0 4.5rem 2rem 5.5rem;
+    }
+
+    .course-link{
+        max-width:30%;
+        height: auto;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        background-color: white;
+        color: grey;
+    }
+
+    .course-image{
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .courses-text{
+        margin: 0.5rem 0;
+    }
+
+    .course-name{
+        font-weight: bold;
+        color:black;
+    }
+
+    .topic-courses{
+        margin-left: 1rem;
+    }
+
+    .topics{
+        margin-bottom: 1.5rem;
+    }
+
+    /* Thesis Exhibit Section for Desktop */
+    #main-lower-section{
+        display: none;
+    }
+
+    #thesis-desktop{
+        display:block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #thesis-heading{
+        text-align: center;
+    }
+
+    #thesis-content{
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    #left-div{
+        min-width: 60%;
+    }
+
+    #right-div{
+        min-width: 40%;
+    }
+
+    .right-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .thesis-images{
+        width: 35%;
+        height: auto;
+    }
+
+    .thesis-text{
+        width:65%;
+        height: auto;
+    }
+
+    .thesis-text-p{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    #right-div{
+        margin-left: 1.5rem;
+    }
+
+    #upper-right-div{
+        margin-bottom: 1.5rem;
+        background-color: lightgrey;
+    }
+
+    #right-image{
+        margin: 1rem 1rem;
+    }
+
+    #video-div{
+        margin-bottom: 1.5rem;
+    }
+
+    /* footer Section for Desktop */
+    #footer-mobile{
+        display: none;
+    }
+
+    #footer-desktop{
+        display:block;
+    }
+
+    #footer-p{
+        float: left;
+    }
+
+    #footer-links{
+        float:right;
+    }
+
+    #footer-links a{
+        text-decoration: none;
+        color:lightgrey;
+    }
+
+
+
 }

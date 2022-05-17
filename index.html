@@ -18,58 +18,197 @@
             <p class="links"><a href="#"><i class="fa fa-desktop fa-2x" aria-hidden="true"></i></a></p>
             <p class="links"><a href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a></p>
         </div>
+        <!-- This is the header for the desktop version -->
+        <div id="desktop-header">
+            <div id="header-left">
+                <a><i class="fa-solid fa-colon-sign fa-lg"></i></a>
+                <span><strong>COLMAR</strong>ACADEMY</span>
+            </div>
+            <div id="header-right">
+                <a href="#" class="header-right-links">On Campus</a>
+                <a href="#" class="header-right-links">Online or Companies</a>
+                <a href="#" class="header-right-links">Sign in</a>
+            </div>
+        </div>
     </header>
     <div class="banner-section">   
         <!--Banner Image-->
-        <p><img src="resources/images/banner.jpg" alt="banner" class="banner-image"></p>
+        <p id="banner-p"><img src="resources/images/banner.jpg" alt="banner" class="banner-image"></p>
         <!--heading text-->
-        <h1>Learn Something new everyday</h1>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-        <a id="banner-link">Start here</a>
+        <div id="banner-text">
+            <h1>Learn Something new everyday</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <a id="banner-link">Start here</a>
+        </div>
     </div>
     <!--This is the main section-->
     <main>
-        <div id="main-upper-section">
-            <img src="resources/images/information-orientation-mobile.jpg" alt="a group of students" class="main-images" id="orientation-image">
-            <div class="labels">
-                <h2>Orientation Date</h2>
-                <p class="label">Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                <a href="#" class="read-more">Read more</a>
+        
+        <div id="main-first-section">
+            <!-- Desktop Left Side of the main Section -->
+            <div id="main-desktop-left">
+                <img src="resources/images/information-main.jpg" alt="A man using a laptop" id="main-left-image">
+                <h2 id="left-heading">It doesn't hurt to keep practicing</h2>
+                <p id="first-section-p">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur possimus, temporibus minima quidem at quos doloremque quod facere laboriosam odio debitis libero excepturi quaerat saepe maiores fuga est nobis voluptates?"</p>
+                <p>Ebenezer, Snr Software Engineer at Freelance</p>
             </div>
-            <img src="resources/images/information-campus-mobile.jpg" alt="campus library" class="main-images" id="campus-image">
-            <div class="labels">
-                <h2>Our Campus</h2>
-                <p class="label">Find which Campus is close to you</p>
-                <a href="#" class="read-more">Read more</a>
+            <!--Desktop Right Side of the main Section-->
+            <div id="main-desktop-right">
+                <div id="main-upper-section">
+                    <div class="sections">
+                        <img src="resources/images/information-orientation-mobile.jpg" alt="a group of students" class="main-images" id="orientation-image">
+                        <img src="resources/images/information-orientation.jpg" alt="a group of students" class="main-images-desktop">
+                        <div class="labels">
+                            <h2>Orientation Date</h2>
+                            <p class="label">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                    <div class="sections">
+                        <img src="resources/images/information-campus-mobile.jpg" alt="campus library" class="main-images" id="campus-image">
+                        <img src="resources/images/information-campus.jpg" alt="campus library" class="main-images-desktop">
+                        <div class="labels">
+                            <h2>Our Campus</h2>
+                            <p class="label">Find which Campus is close to you</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                    <div class="sections" id="last-section">
+                       <img src="resources/images/information-guest-lecture-mobile.jpg" class="main-images" id="guest-image" class="last-image">
+                       <img src="resources/images/information-guest-lecture.jpg" alt="guest-speaker" class="main-images-desktop" id="last-image">
+                        <div class="labels">
+                            <h2>Special Guest Lecture</h2>
+                            <p class="label">Join a keynote with Oliver Sack about music in medical treatment</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <img src="resources/images/information-guest-lecture-mobile.jpg" class="main-images" id="guest-image">
-            <div class="labels">
-                <h2>Special Guest Lecture</h2>
-                <p class="label">Join a keynote with Oliver Sack about music in medical treatment</p>
-                <a href="#" class="read-more" id="last-read-more">Read more</a>
+        </div> 
+
+        <!-- Start Learning Section -->
+        <div id="start-learing-section-mobile">
+            <hr style="height:1px;border:none;color:#333;background-color:#333;" />
+            <div id="main-middle-section">
+                <h2 id="middle-heading">Start Learning</h2>
+                <div id="middle-links">
+                   <a href="#" class="mid-link-text">Software Engineering</a>
+                   <a href="#" class="mid-link-text">Computer Art</a>
+                   <a href="#" class="mid-link-text">Design</a>
+                   <a href="#" class="mid-link-text">Data</a>
+                   <a href="#" class="mid-link-text">Business</a>
+                   <a href="#" class="mid-link-text">Marketing</a>
+                </div>
             </div>
         </div>
-        <hr style="height:1px;border:none;color:#333;background-color:#333;" />
-        <div id="main-middle-section">
-            <h2 id="middle-heading">Start Learning</h2>
-            <div id="middle-links">
-               <a href="#" class="mid-link-text">Software Engineering</a>
-               <a href="#" class="mid-link-text">Computer Art</a>
-               <a href="#" class="mid-link-text">Design</a>
-               <a href="#" class="mid-link-text">Data</a>
-               <a href="#" class="mid-link-text">Business</a>
-               <a href="#" class="mid-link-text">Marketing</a>
+        <div id="start-learning-section-desktop">
+            <p id="middle-heading">Start Learning</p>
+            <div id="image-links">
+                <div class="course-link">
+                    <img src="resources/images/course-software.jpg" alt="a desktop machine" class="course-image">
+                    <div class="topic-courses">
+                        <p class="course-name">Software Engineering</p>
+                        <p class="courses-text">Courses</p>
+                        <p class="topics">Web Development, Mobile Development, IoT, API's</p>
+                    </div>
+                </div>
+                <div class="course-link">
+                    <img src="resources/images/course-computer-art.jpg" alt="a mobile phone" class="course-image">
+                    <div class="topic-courses">
+                        <p class="course-name">Computer Art</p>
+                        <p class="courses-text">Courses</p>
+                        <p class="topics">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                    </div>
+                </div>
+                <div class="course-link">
+                    <img src="resources/images/course-design.jpg" alt="a photographer" class="course-image">
+                    <div class="topic-courses">
+                        <p class="course-name">Design</p>
+                        <p class="courses-text">Courses</p>
+                        <p class="topics">User Experience Design, User Research, Visual Design</p>
+                    </div>
+                </div>
+                <div class="course-link">
+                    <img src="resources/images/course-data.jpg" alt="A laptop" class="course-image">
+                    <div class="topic-courses">
+                        <p class="course-name">Data</p>
+                        <p class="courses-text">Courses</p>
+                        <p class="topics">Data Science, Big Data, SQL, Data Visualization</p>
+                    </div>
+                </div>
+                <div class="course-link">
+                    <img src="resources/images/course-business.jpg" alt="A chess board" class="course-image">
+                    <div class="topic-courses">
+                        <p class="course-name">Business</p>
+                        <p class="courses-text">Courses</p>
+                        <p class="topics">Product Development, Business Development, StartUp</p>
+                    </div>
+                </div>
+                <div class="course-link">
+                    <img src="resources/images/course-marketing.jpg" alt="A man looking at his watch" class="course-image">
+                    <div class="topic-courses">
+                        <p class="course-name">Marketing</p>
+                        <p class="courses-text">Courses</p>
+                        <p class="topics">Analytics, Content Marketing, mobile Marketing</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </div>    
         <div id="main-lower-section">
             <h2 id="lower-heading">Thesis Exhibits</h2>
             <video autoplay muted loop width="100%" height="auto">
                 <source src="resources/videos/thesis.mp4" type="video/mp4">
             </video>
         </div>
+        <div id="thesis-desktop">
+            <h2 id="thesis-heading">Thesis Exhibits</h2>
+            <div id="thesis-content">
+                <div id=left-div>
+                    <div id="video-div">
+                        <video width="100%" height="auto">
+                            <source src="resources/videos/thesis.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div id="text-div">    
+                        <p style="margin-bottom: 8px;">Reimagine Urban</p>
+                        <p style="margin-bottom: 32px; color: grey;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis voluptatum atque omnis aperiam laborum saepe in architecto consequatur mollitia placeat, corrupti nobis? Ipsum voluptate quod est. Adipisci similique veritatis reiciendis!</p>
+                    </div>
+                </div>
+                <div id="right-div">
+                    <div id="upper-right-div">
+                        <div class="right-content">
+                            <img src="resources/images/thesis-fisma.jpg" alt="figma design" class="thesis-images" id="right-image">
+                            <div class="thesis-text">
+                                <p class="thesis-text-p">Fisma: Design and Prototype</p>
+                                <p>Designer showcase of new prototype product</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="lower-right-div">
+                        <div class="right-content">
+                            <img src="resources/images/thesis-now-and-then.jpg" alt="image of New York" class="thesis-images">
+                            <div class="thesis-text">
+                                <p class="thesis-text-p">Now and Then</p>
+                                <p>Research Study about New York</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <p id="footer-p">&copy; 2016 Colmar Academy. All rights reserved.</p>
+        <div id="footer-mobile">
+            <p id="footer-p">&copy; 2016 Colmar Academy. All rights reserved.</p>
+        </div>
+        <div id="footer-desktop">
+            <p id="footer-p">&copy; 2016 Colmar Academy. All rights reserved.</p>
+            <div id="footer-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+        
     </footer>
 </body>
 </html>
